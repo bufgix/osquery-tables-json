@@ -57,7 +57,10 @@ async function main() {
 
     tableNames.push({ title, desc, columns, platforms });
   }
-  fs.writeFileSync("os-query-tables.json", JSON.stringify(tableNames));
+  fs.writeFileSync(
+    `os-query-tables-${OS_QUERY_VERSION}.json`,
+    JSON.stringify(tableNames)
+  );
 
   process.exit(0);
 }
