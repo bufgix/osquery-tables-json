@@ -2,7 +2,7 @@ const fs = require("fs");
 const playwright = require("playwright");
 const { chromium } = playwright;
 
-const OS_QUERY_VERSION = "5.2.2";
+const OS_QUERY_VERSION = "5.2.3";
 const URL = `https://osquery.io/schema/${OS_QUERY_VERSION}`;
 
 async function main() {
